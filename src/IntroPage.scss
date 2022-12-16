@@ -18,7 +18,8 @@
     margin-bottom: 1.5rem;
     padding: 1.2rem 2.5rem;
     border-radius: 0.75rem;
-    box-shadow: 0 8px 2px 1px rgba(90, 90, 90, .3);
+    font-weight: 400;
+    box-shadow: 0 8px 0px 0px rgba(90, 90, 90, .4);
 
     span {
       font-weight: 700;
@@ -37,8 +38,21 @@
     border: 1px solid var(--gray-blue);
     margin-bottom: 0.75rem;
     color: var(--dark-blue);
+    font-weight: 600;
     padding: 0.75rem;
     border-radius: 0.25rem;
+    position: relative;
+
+    &:focus {
+      outline: 1px solid var(--dark-blue);
+      border: 1px solid var(--dark-blue);
+    }
+  }
+
+  input.error {
+    outline: 1px solid var(--red);
+    border: 1px solid var(--red);
+    margin-bottom: 0.15rem;
   }
 
   .term-of-services {
@@ -51,6 +65,18 @@
       color: var(--red);
       font-weight: 700;
     }
+  }
+
+  .form label {
+    display: inline-block;
+    position: relative;
+  }
+
+  .error-img {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    margin-right: 1rem;
   }
 
   .submit {
@@ -68,9 +94,54 @@
     &:hover {
       background-color: hsl(154, 59%, 51%, 0.8);
     }
+
+    &:active {
+      box-shadow: inset 0px 5px 10px 0px var(--green-dark);
+    }
+  }
+
+  .validation-error {
+    color: var(--red);
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    font-style: italic;
   }
 }
 
-
 @media (min-width: 375px) {
+  .page-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .heading {
+      text-align: left;
+      font-size: 3rem;
+      line-height: 3.25rem;
+    }
+
+    .paragraph {
+      text-align: left;
+    }
+
+    .form-container {
+      max-width: 500px;
+    }
+
+    .form {
+      padding: 2rem;
+    }
+
+    input {
+      margin-bottom: 1rem;
+    }
+  }
 }
