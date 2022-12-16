@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import './App.scss'
 import IntroPage from "./IntroPage";
 import FreeTrialForm from "./FreeTrialForm";

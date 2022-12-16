@@ -1,3 +1,5 @@
+import './IntroPage.scss'
+
 type Props = {
     children?: JSX.Element,
 };
@@ -5,7 +7,13 @@ type Props = {
 function IntroPage({children}: Props) {
 
     return (
-        <div>
+        <div className='page-container'>
+            <div>
+                <h1 className="heading">Learn to code by watching others</h1>
+                <p className="paragraph">See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how developers think is invaluable
+                </p>
+            </div>
             {children}
         </div>
     )

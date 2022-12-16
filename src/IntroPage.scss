@@ -1,0 +1,76 @@
+.page-container {
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .heading {
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 600;
+  }
+
+  .paragraph {
+    padding-bottom: 3rem;
+  }
+
+  .free-info {
+    background-color: var(--blue);
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 2px 1px rgba(90, 90, 90, .3);
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .form {
+    background-color: var(--white);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+  }
+
+  input {
+    width: 100%;
+    background-color: white;
+    border: 1px solid var(--gray-blue);
+    margin-bottom: 0.75rem;
+    color: var(--dark-blue);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+  }
+
+  .term-of-services {
+    line-height: 24px;
+    font-size: 0.75rem;
+    padding: 1rem 0.5rem 0;
+    color: var(--gray-blue);
+
+    .highlight {
+      color: var(--red);
+      font-weight: 700;
+    }
+  }
+
+  .submit {
+    background-color: var(--green);
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 0px 0px var(--green-dark);
+    cursor: pointer;
+
+    &:hover {
+      background-color: hsl(154, 59%, 51%, 0.8);
+    }
+  }
+}
+
+
+@media (min-width: 375px) {
+}
